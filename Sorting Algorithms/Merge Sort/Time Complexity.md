@@ -6,23 +6,18 @@ In each step, the time complexity for the merge function is O(n) as n elements a
 Calculating Time Complexity:
 The recurrence relation can be represented as:
 
-  T(n) = { 1                          n = 1
-                2T(n/2) + n         n > 1
+  T(n) = { 1                   n = 1
+           2T(n/2) + n         n > 1
 
 1.	By Recursion Tree Method:
            
-                                                   
-                                              
-
-        
-
          As the algorithm continues until n/2k = 1 (k steps) ,
                          
                                             n = 2k
                                     i.e.   k = log2n
  
           So, the algorithm has log n steps and in each step, n elements are merged. Hence, the total 
- Time take is O(n log n).
+          Time take is O(n log n).
 
  2.   By Substitution  Method:
                    We know,
