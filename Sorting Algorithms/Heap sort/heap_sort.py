@@ -3,8 +3,6 @@ A = [5, 4, 8, 2, 9, 5, 7, 3, 6, 8, 1]
 # length of the list.
 n = len(A)
 
-
-
 def main():
     print("Unsorted List: ")
     for i in range(n):
@@ -75,7 +73,4 @@ def deletion(heap_size):
     return    
 
 # Call main function to execute the code.
-main()        
-
-
-
+main()       
