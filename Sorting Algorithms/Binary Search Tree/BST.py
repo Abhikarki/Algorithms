@@ -138,6 +138,7 @@ def inorder(root):
         # Traverse right
         inorder(root.right)   
 
+# To search and print the inorder successor of a key.
 def find_successor(root, k):
     # first search for the key.
     tmp1 = search(root, k)
