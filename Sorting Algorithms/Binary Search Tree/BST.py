@@ -1,4 +1,4 @@
-# MAKING A UNBALANCED BINARY SEARCH TREE.
+# MAKING AN UNBALANCED BINARY SEARCH TREE.
 
 class BST_Node:
     def __init__(self, k):
