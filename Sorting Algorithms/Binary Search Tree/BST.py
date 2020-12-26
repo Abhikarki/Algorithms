@@ -28,7 +28,7 @@ def insertion(node, k):
 
     return node
 
-# Function to find the next larger key in the tree.
+# Function to find the node with next larger key in the tree.
 # Also known as inorder successor.
 def find_next_larger(node, k):
     # if the node doesnot have any right child.
@@ -67,7 +67,7 @@ def search(node, k):
     # return None if the key is not found.
     return None            
 
-# Function to find the inorder predecessor.
+# Function to find the node with inorder predecessor.
 def find_predecessor(node, k):
     # if the node doesnot have any left child.
     if node.left is None:
