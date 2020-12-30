@@ -113,8 +113,8 @@ def delete(root, k):
             return tmp       
         
         # If the node has two children,
-        # place the key of the inorder successor node in the node to be deleted.
         else:
+            # Find inorder successor of the node to be deleted.
             tmp = find_next_larger(root, k)
             # Update the key of the node to its successor.
             root.key = tmp.key           
@@ -127,7 +127,7 @@ def delete(root, k):
 # Recursive function for inorder traversal i.e the sorted order.
 def inorder(root):
     if root is not None:
-        # Traverse left
+        # Move to left
         inorder(root.left)
 
         # print the key.
@@ -135,13 +135,14 @@ def inorder(root):
         # default value '\n' to ' '.
         print(str(root.key) + " ", end = ' ')
 
-        # Traverse right
+        # Move to right
         inorder(root.right)   
 
 # To search and print the inorder successor of a key.
 def find_successor(root, k):
     # first search for the key.
     tmp1 = search(root, k)
+    # If key not found.
     if tmp1 is None:
         print("key " + str(k) + " not found.")
     else:
