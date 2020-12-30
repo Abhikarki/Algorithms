@@ -127,7 +127,7 @@ def delete(root, k):
 # Recursive function for inorder traversal i.e the sorted order.
 def inorder(root):
     if root is not None:
-        # Move to left
+        # Move to left.
         inorder(root.left)
 
         # print the key.
