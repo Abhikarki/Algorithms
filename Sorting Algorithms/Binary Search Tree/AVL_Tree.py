@@ -57,7 +57,7 @@ def insertion(node, k):
 
     # update the height and balance_factor of the node.
     node.compute()
-    # Call the rotate function if the node is not balanced.
+    # Call the rotate function if the subtree is not balanced.
     if abs(node.balance_factor) > 1:
         return rotate(node)
 
@@ -99,7 +99,7 @@ def delete(root, k):
 
     # Update the height and balance_factor of the node.
     root.compute()
-    # Call the rotate function if the node is not balanced.
+    # Call the rotate function if the subtree is not balanced.
     if abs(root.balance_factor) > 1:
         return rotate(root)
 
