@@ -66,7 +66,7 @@ def multiply(str1, str2):
     z2 = x3 - z0 - z1
     
     # Convert to strings for padding the appropriate number of 
-    # trailing zeros befor addition.
+    # trailing zeros before addition.
     k0 = str(z0)
     k2 = str(z2)
  
